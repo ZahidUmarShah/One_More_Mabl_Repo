@@ -23,9 +23,6 @@ jobs:
             Plan 1
             Plan 2
 
-      - name: Display mabl results
-        run: |
-          echo "✅ Test Run Status: ${{ steps.mabl-test-deployment.outputs.result }}"
-          echo "🔗 View Results: ${{ steps.mabl-test-deployment.outputs.deployment-url }}"
+      
 
 
