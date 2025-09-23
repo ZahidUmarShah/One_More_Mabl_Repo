@@ -20,4 +20,7 @@ jobs:
         with:
           application-id: oLeftqUnm6RbfnPsjE21wQ-a
           environment-id: Iql8XHETRdI2zrQEiptRfA-e
+          plan-labels: |
+            Plan1
+            Plan2
 
