@@ -14,31 +14,6 @@ jobs:
         id: mabl-test-deployment
         uses: mablhq/github-run-tests-action@v1
         env:
-          # Use a "CI/CD Integration" type of mabl API key
-          MABL_API_KEY: ${{ secrets.MABL_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          application-id: oLeftqUnm6RbfnPsjE21wQ-a
-          environment-id: Iql8XHETRdI2zrQEiptRfA-e
-          plan-labels: |
-            Plan 1
-            Plan 2
-       name: Mabl
-
-on:
-  push:
-
-jobs:
-  test:
-    name: mabl Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Functional test deployment
-        id: mabl-test-deployment
-        uses: mablhq/github-run-tests-action@v1
-        env:
           MABL_API_KEY: ${{ secrets.MABL_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -52,5 +27,5 @@ jobs:
         run: |
           echo "✅ Test Run Status: ${{ steps.mabl-test-deployment.outputs.result }}"
           echo "🔗 View Results: ${{ steps.mabl-test-deployment.outputs.deployment-url }}"
-     
+
 
