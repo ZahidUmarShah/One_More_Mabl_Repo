@@ -21,6 +21,6 @@ jobs:
           application-id: oLeftqUnm6RbfnPsjE21wQ-a
           environment-id: Iql8XHETRdI2zrQEiptRfA-e
           plan-labels: |
-            Plan1
-            Plan2
+            Plan 1
+            Plan 2
 
