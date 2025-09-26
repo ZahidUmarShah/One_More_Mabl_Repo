@@ -2,7 +2,7 @@ name: Mabl
 
 on:
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "*/5 * * * *"
 jobs:
   test:
     name: mabl Test
