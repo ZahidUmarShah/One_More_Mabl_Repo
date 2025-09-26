@@ -21,6 +21,7 @@ jobs:
           plan-labels: |
             Plan 1
             Plan 2
+          continue-on-failure: true
 
       
 
